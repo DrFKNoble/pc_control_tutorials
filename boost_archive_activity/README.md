@@ -92,7 +92,7 @@ Open [main.cpp](main.cpp). Complete the following:
     1. Define a public default constructor. The constructor should not accept any arguments and and should initialise `value` as 0.0.
     1. Define a public constructor that accepts the following argument: `float v`. The constructor should initialise `value` as `v`.
     1. Define a public default destructor.
-    1. Define a public member function named "getValue()". The function should not any arguments. The function should return an `int` data type.
+    1. Define a public member function named "getValue()". The function should not any arguments. The function should return an `float` data type.
     1. Define a public member function named "setValue()". The function should accept the following arguments: `const float &v`. The function should not return a value. In the function, assign the parameter `v` to the member variable `value`.
     1. Use the `private` keyword to speficy following members are private members of `Sensor`.
     1. Use the `friend` keyword to make `Sensor` a friend of the `boost::serialization::access` class.

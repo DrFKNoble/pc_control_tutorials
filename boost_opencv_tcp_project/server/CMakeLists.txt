@@ -38,6 +38,8 @@ endif()
 
 # build
 
+add_custom_command(TARGET server POST_BUILD COMMAND ${CMAKE_COMMAND} ARGS -E copy ${PROJECT_SOURCE_DIR}/video.mp4 $<TARGET_FILE_DIR:server>)
+
 foreach(file ${OPENCV_DLLS})
 	add_custom_command(TARGET server POST_BUILD COMMAND ${CMAKE_COMMAND} ARGS -E copy ${file} $<TARGET_FILE_DIR:server>)
 endforeach(file)
@@ -45,6 +47,7 @@ endforeach(file)
 # install
 
 install(TARGETS server DESTINATION ${PROJECT_SOURCE_DIR}/bin)
+install(FILES "video.mp4" DESTINATION ${PROJECT_SOURCE_DIR}/bin)
 
 foreach(file ${OPENCV_DLLS})
 	install(FILES ${file} DESTINATION ${PROJECT_SOURCE_DIR}/bin)

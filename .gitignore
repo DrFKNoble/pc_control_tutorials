@@ -4,3 +4,5 @@
 **/.vscode/**
 **/test_*/**
 **/CMakeSettings.json
+**/CMakeSettings.json
+**/out/**

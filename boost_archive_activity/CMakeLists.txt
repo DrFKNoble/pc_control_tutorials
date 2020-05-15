@@ -8,7 +8,7 @@ set(BOOST_ROOT "C:/boost_1_73_0")
 find_package(Boost)
 
 include_directories(${Boost_INCLUDE_DIRS})
-link_directories(${Boost_LIBRARY_DIRS})
+link_directories("${Boost_LIBRARY_DIRS}")
 
 add_executable(main main.cpp)
 
