@@ -1,15 +1,17 @@
 #include <QCoreApplication>
 #include <QObject>
 
-#include "server.h"
+#include "delay.h"
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    server *s = new server;
+    delay *d = new delay();
 
-    QObject::connect(s, SIGNAL(sig_quit()), &a, SLOT(quit()));
+    QObject::connect(d, SIGNAL(sig_quit()), &a, SLOT(quit()));
+
+    d->start(1000);
 
     return a.exec();
 }
