@@ -13,3 +13,15 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_actionQuit_triggered()
+{
+    QApplication::quit();
+}
+
+void MainWindow::on_startButton_clicked()
+{
+    float time = 5000;
+
+    emit sig_startButton_clicked(time);
+}

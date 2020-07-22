@@ -39,6 +39,8 @@ else()
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    delay.cpp
+    delay.h
   )
 endif()
 

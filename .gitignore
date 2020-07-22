@@ -76,6 +76,7 @@ Thumbs.db
 
 **/bin/**
 **/build/**
+**/build-*/**
 **/.vs/**
 **/.vscode/**
 **/test_*/**

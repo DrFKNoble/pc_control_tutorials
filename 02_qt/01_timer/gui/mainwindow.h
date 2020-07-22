@@ -15,6 +15,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+signals:
+    void sig_startButton_clicked(const float &time);
+
+private slots:
+    void on_actionQuit_triggered();
+
+    void on_startButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
