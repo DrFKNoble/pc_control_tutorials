@@ -14,14 +14,14 @@ public:
 
     void start(const float &time);
 
-public slots:
+signals:
+    void sig_quit();
+
+private slots:
     void slot_timerElapsed();
 
 private:
     QTimer *timer;
-
-signals:
-    void sig_quit();
 
 };
 
