@@ -1,4 +1,4 @@
-# Delay
+# Timer Project
 
 ## main.cpp
 ```cpp
@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
     return a.exec();
 }
 ```
+
 ## delay.h
 ```cpp
 #ifndef DELAY_H
@@ -51,6 +52,7 @@ signals:
 
 #endif // DELAY_H
 ```
+
 ## delay.cpp 
 ```cpp
 #include "delay.h"
