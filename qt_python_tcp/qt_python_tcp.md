@@ -482,7 +482,7 @@ This will start Qt Designer.
 
 ---
 
-Something similar to the followig will be displayed:
+Something similar to the following will be displayed:
 
 ![height:320px](images/00/13.PNG)
 *Figure:* Qt Designer.
