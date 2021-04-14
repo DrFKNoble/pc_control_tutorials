@@ -27,7 +27,7 @@ Dr Frazer Noble
 # **Introduction**
 
 In this presentation, I will describe:
-- How to communicate via a COM port using Python.
+- How to control an Arudino's pin via a COM port using Python.
 
 ---
 
@@ -412,7 +412,7 @@ Type "Q" to quit.
 # **Conclusion**
 
 In this presentation, I have described:
-- How to communicate via a COM port using Python
+- How to control an Arudino's pin via a COM port using Python.
 
 ---
 
