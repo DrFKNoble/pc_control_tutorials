@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Pin Toggle</title>
+</head>
+
+<body>
+    {% if pin_list %}
+        <table>
+        {% for pin in pin_list %}
+            <tr><td>{{pin.name}} is {{pin.state}}</td></tr>
+            <tr><td><button value="{{pin.pin_number}}">Click me!</button></td></tr>
+        {% endfor %}
+        </table>
+    {% else %}
+        <p>No pins are available.</p>
+    {% endif %}
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/index.css' %}">
+    <script type="text/javascript" src="{% static 'app/jquery-3.6.0.js' %}"></script>
+    <script type="text/javascript" src="{% static 'app/index.js' %}"></script>
+</body>
+
+</html>
