@@ -4,6 +4,7 @@ import sys
 import serial
 from serial.tools.list_ports import comports
 
+
 def main():
 
     ser = serial.Serial()
@@ -29,20 +30,21 @@ def main():
 
     while True:
         pin = input("Enter a pin to toggle (00 - 13), Q/q to break: ")
-        
+
         if pin == 'Q' or pin == 'q':
             break
 
         data = '{}\n'.format(pin)
         ser.write(data.encode("utf-8"))
-        
+
         data = ser.readline()
         print('{}'.format(data.decode("utf-8")))
 
     ser.close()
 
-    return 0 
+    return 0
+
 
 if __name__ == "__main__":
 
-  sys.exit(main())
+    sys.exit(main())

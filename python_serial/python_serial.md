@@ -217,7 +217,7 @@ import serial
 from serial.tools.list_ports import comports
 ```
 
-This will import the `serial` module and serial module's `comports()` function.
+This will import the `serial` module and and the module's `comports()` function. 
 
 The documentation for the `serial` module is available at: [https://pythonhosted.org/pyserial/index.html](https://pythonhosted.org/pyserial/index.html).
 
@@ -396,7 +396,7 @@ Enter a pin to toggle (00 - 13), Q/q to break: 13
 0
 ```
 
-Type "13" into the terminal.
+Type `13` into the terminal.
 
 Press <kbd>Enter</kbd>.
 
