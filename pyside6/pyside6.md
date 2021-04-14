@@ -345,7 +345,7 @@ Change the Label widget's name to "labelUsername".
 
 Change the LineEdit widget's name to "lineEditUsername".
 
-Set the PushButton widget's minimum width to 75. Change the object's name to "pushButtonGreet".
+Set the PushButton widget's width to 75. Change the object's name to "pushButtonGreet".
 
 ---
 

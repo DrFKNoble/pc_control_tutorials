@@ -146,7 +146,7 @@ Type the following command into the terminal and then press <kbd>Enter</kbd>:
 python -m venv venv
 ```
 
-This will create the `venv` virtual environment in `pyside6`.
+This will create the `venv` virtual environment in `qt_python_TCP`.
 
 *Note:* A prompt indicating Visual Studio Code "noticed a new virtual environment" and will ask "if you want to select it for the workspace folder". Press the "Yes" button.
 

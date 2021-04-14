@@ -26,7 +26,7 @@ Dr Frazer Noble
 # **Introduction**
 
 In this presentation, I will describe:
-- How to create an app to control an Arduino via the web.
+- How to control an Arduino's pin via the web using the Django web framework.
 
 ---
 
@@ -344,7 +344,7 @@ def index(request):
     return HttpResponse("Hello world!")
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 `index()` will display `Hello World!` in the browser when called.
 
@@ -366,7 +366,7 @@ urlpatterns = [
 ]
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 `index()` is mapped to app's `''` URL.
 
@@ -386,7 +386,7 @@ urlpatterns = [
 ]
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 This will map `index()` to `web_controller`'s `app/` URL.
 
@@ -437,7 +437,7 @@ class PIN(models.Model):
         return self.name
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 ---
 
@@ -459,7 +459,7 @@ INSTALLED_APPS = [
 ...
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 ---
 
@@ -582,7 +582,7 @@ from .models import PIN
 admin.site.register(PIN)
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 This will register the `PIN` model with the Django admin website.
 
@@ -642,7 +642,7 @@ def toggle(request, pin_number):
     return HttpResponse("pin_number: {}".format(pin_number))
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 `toggle()` accepts an additional argument, `pin_number` and will display its value in the browser when called.
 
@@ -663,7 +663,7 @@ urlpatterns = [
 ]
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 `toggle()` is mapped to app's `'toggle/<int:pin_number>/'` URL. 
 
@@ -698,7 +698,7 @@ def index(request):
 ...
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 `index()` get's a list of all the `PIN` instances and displays it in the browser.
 
@@ -738,7 +738,7 @@ Open `app/index.html` and type the following HTML code into file:
 </html>
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 ---
 
@@ -760,7 +760,7 @@ def index(request):
 ...
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 `index()` get's a list of all the `PIN` instances and displays it in the browser.
 
@@ -786,7 +786,7 @@ def index(request):
 ...
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 `render()` is a shortcut used to display templates.
 
@@ -831,7 +831,7 @@ STATICFILES_DIRS = [
 ...
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 <!-- ---
 
@@ -886,7 +886,7 @@ $('button').click(function () {
 });
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 ---
 
@@ -905,7 +905,7 @@ Open `app/index.html` and type the following HTML code into the file:
 ...
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 ---
 
@@ -952,7 +952,7 @@ def toggle(request, pin_number):
     return render(request, 'app/index.html', context)
 ```
 
-Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
+<!-- Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. -->
 
 ---
 
@@ -983,7 +983,7 @@ The LED has been turned off via a website!
 # **Conclusion**
 
 In this presentation, I have described:
-- How to create an app to control an Arduino via the web.
+- How to control an Arduino's pin via the web using the Django web framework.
 
 ---
 
