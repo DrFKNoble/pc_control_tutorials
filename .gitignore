@@ -83,3 +83,4 @@ Thumbs.db
 **/CMakeSettings.json
 **/CMakeSettings.json
 **/out/**
+**/venv/**
