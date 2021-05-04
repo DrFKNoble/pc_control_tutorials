@@ -374,7 +374,7 @@ Change the Label, ComboBox, and PushButton widgets' text as illustrated:
 
 Set the ComboBox widgets' width to 75 px. Change the objects' names to "comboBoxBaudRate", "comboBoxDataSize", ..., "comboBoxFlowControl".
 
-Set the "Open" PushButton's width to 75 px. Change the object's name to "pushButtonOpen".
+Set the "Open" PushButton's width to 75 px. Change the object's name to "pushButtonOpenPort".
 
 ---
 
